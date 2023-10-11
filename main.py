@@ -1,6 +1,6 @@
-from markov_chains.Probabilistic_markov_chain import ProbabilisticMarkovChain
-from markov_chains.Possibilistic_markov_chain import PossibilisticMarkovChain
-from markov_cahins.Fuzzy_markov_chain import FuzzyMarkovChain
+from chains.Probabilistic_markov_chain import ProbabilisticMarkovChain
+from chains.Possibilistic_markov_chain import PossibilisticMarkovChain
+from chains.Fuzzy_markov_chain import FuzzyMarkovChain
 
 TRANSITION_MATRIX = [[0.0, 0.2, 0.8, 0.0],
                      [0.3, 0.0, 0.0, 0.7],

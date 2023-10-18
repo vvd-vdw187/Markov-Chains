@@ -16,11 +16,17 @@ def main(transition_matrix):
     # print(Pr_chain.state_history)
     # print(Pr_chain.state)
 
-    Ps_chain = PossibilisticMarkovChain(transition_matrix=transition_matrix, state=[0])
-    Ps_chain.run(10)
-    pprint(Ps_chain.state_history)
-    print("-"*10)
-    pprint(Ps_chain.state)
+    # Ps_chain = PossibilisticMarkovChain(transition_matrix=transition_matrix, state=[0])
+    # Ps_chain.run(10)
+    # pprint(Ps_chain.state_history)
+    # print("-"*10)
+    # pprint(Ps_chain.state)
+
+    transition_matrix = []
+    state = []
+    reference_states = ["A","B","B","B","A","B","A","A"]
+    ps_chain = PossibilisticMarkovChain(transition_matrix, state, reference_states)
+    
 
 if __name__ == "__main__":
     main(transition_matrix=TRANSITION_MATRIX)

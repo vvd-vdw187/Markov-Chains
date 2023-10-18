@@ -3,10 +3,8 @@ from dataclasses import dataclass
 import numpy as np
 
 class PossibilisticMarkovChain(MarkovChain):
-    def __init__(self, transition_matrix: np.array, state: list, reference_states: list):
-        super().__init__(transition_matrix, state, reference_states)
-
-        self.transitions = {i: {j: transition_matrix[i][j] for j in range(len(transition_matrix[i]))} for i in range(len(transition_matrix))}
+    # def __init__(self, transition_matrix: np.array, state: list, reference_states: list):
+    #     super().__init__(transition_matrix, state, reference_states)
 
     def step(self):
         current_state = self.state[-1]

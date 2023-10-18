@@ -25,8 +25,9 @@ def main(transition_matrix):
     transition_matrix = []
     state = []
     reference_states = ["A","B","B","B","A","B","A","A"]
-    ps_chain = PossibilisticMarkovChain(transition_matrix, state, reference_states)
-    
+    ps_chain = ProbabilisticMarkovChain(transition_matrix, state, reference_states)
+    ps_chain.generate_transition_matrix(2)
+
 
 if __name__ == "__main__":
     main(transition_matrix=TRANSITION_MATRIX)
